@@ -1,0 +1,99 @@
+body {
+    background-color: #041C32;
+}
+
+.nav {
+    background-color: #002B5B;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin: 25px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
+  
+  .logo img {
+    height: 90px;
+    margin-right: 10px;
+  }
+  
+  .brand {
+    font-weight: bold;
+    font-size: 30px;
+    color: #C1D0B5;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    background-image: url('menu_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }  
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 70px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #C1D0B5;
+    padding: 8px;
+  }
+  
+  .menu li a:hover {
+    background-color: #2B4865;
+    transition: 1s;
+    border-radius: 50px;
+  }
+  
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+    
+    .menu-toggle {
+      display: block;
+    }
+    
+    .menu.active {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      padding: 10px;
+      z-index: 999;
+    }
+    
+    .menu.active li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
